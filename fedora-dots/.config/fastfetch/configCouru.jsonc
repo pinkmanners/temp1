@@ -1,0 +1,37 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/couru.txt",
+    "color": {
+      "1": "white",
+      "2": "black",
+      "3": "black",
+      "4": "cyan",
+      "5": "blue",
+      "6": "magenta"
+    },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "break",
+    "colors"
+  ]
+}
+}

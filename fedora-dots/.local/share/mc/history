@@ -1,0 +1,13 @@
+[cmdline]
+0=
+
+[inpmc.fm.view-file]
+0=catppuccin.ini
+
+[Dir Hist New Right Panel]
+0=/home/jayden
+1=/home/jayden/.local/share/mc/skins
+
+[Dir Hist New Left Panel]
+0=/home/jayden
+1=/home/jayden/.local/share/mc/skins

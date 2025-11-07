@@ -1,0 +1,90 @@
+{
+  "layer": "top",
+  "spacing": 0,
+  "height": 0,
+
+  "margin-top": 10,
+  "margin-right": 10,
+  "margin-bottom": 0,
+  "margin-left": 10,
+
+  "modules-left": ["hyprland/workspaces"],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "network",
+    "pulseaudio",
+    "battery",
+    "tray",
+  ],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "tooltip": false,
+  },
+
+  "tray": {
+    "spacing": 10,
+    "tooltip": false,
+  },
+
+  "clock": {
+    "format": "{:%a, %d %b – %H:%M}",
+    "tooltip": false,
+    "on-click": "gnome-calendar",
+  },
+
+  "cpu": {
+    "format": "   {usage}% ",
+    "interval": 5,
+
+    "states": {
+      "critical": 90,
+    },
+
+    "on-click": "btop",
+  },
+
+  "memory": {
+    "format": "  {percentage}% ",
+    "interval": 5,
+
+    "states": {
+      "critical": 80,
+    },
+  },
+
+  "battery": {
+    "format": "   {capacity}% ",
+    "format-charging": "  {capacity}% ",
+    "interval": 60,
+    "states": {
+      "warning": 20,
+      "critical": 10,
+    },
+    "tooltip": false,
+  },
+
+  "network": {
+    "format-wifi": "   {bandwidthDownBits} ",
+    "format-ethernet": "   {bandwidthDownBits} ",
+    "format-disconnected": "no network",
+    "interval": 5,
+    "on-click": "nm-applet",
+    "tooltip": false,
+  },
+
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "   {volume}% ",
+    "format-bluetooth": "  {volume}% ",
+    "nospacing": 1,
+    "on-click": "pavucontrol",
+    "tooltip": false,
+  },
+}

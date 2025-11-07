@@ -1,0 +1,5 @@
+from adi1090x/rofi on github
+https://github.com/adi1090x/rofi
+
+launcher is type 1 style 5
+powermnu is type 1 style 1

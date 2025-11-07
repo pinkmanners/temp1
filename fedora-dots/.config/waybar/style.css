@@ -1,0 +1,154 @@
+@import "macchiato.css";
+
+* {
+    border: none;
+    min-height: 0;
+    font-family: "Space Mono for Powerline";
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0;
+}
+
+window#waybar {
+    background: @base;
+    border: 1px solid @mauve;
+    border-radius: 7px;
+}
+
+tooltip {
+    background-color: #353146;
+    border: 1px solid @mauve;
+    border-radius: 7px;
+    font-size: 2px;
+}
+
+tooltip label {
+    margin: 8px;
+    color: @mauve;
+}
+
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#language {
+    margin: 6px 6px 6px 0px;
+    padding: 2px 8px;
+}
+
+#workspaces {
+    margin: 6px 0px 6px 6px;
+    border-radius: 7px;
+}
+
+#workspaces button {
+    all: initial;
+    min-width: 0;
+    box-shadow: inset 0 -3px transparent;
+    padding: 2px 4px;
+    color: @text;
+    background-color: @base;
+    border: 1px solid @sapphire;
+    border-radius: 7px;
+    margin: 2px;
+}
+
+#workspaces button.active {
+    color: @mantle;
+    background-color: @red;
+}
+
+#workspaces button.urgent {
+    background-color: @base;
+    color: #1f1c27;
+    border: 1px solid #e542c0;
+    border-radius: 7px;
+}
+
+#clock {
+    background-color: @base;
+    border: 1px solid @mauve;
+    border-radius: 7px;
+    color: @text;
+}
+
+#cpu {
+    background-color: @base;
+    border: 1px solid @red;
+    border-radius: 7px;
+    color: @text;
+}
+
+#memory {
+    background-color: @base;
+    border: 1px solid @peach;
+    border-radius: 7px;
+    color: @text;
+}
+
+#network {
+    background-color: @base;
+    border: 1px solid @yellow;
+    border-radius: 7px;
+    color: @text;
+}
+
+#pulseaudio {
+    background-color: @base;
+    border: 1px solid @green;
+    border-radius: 7px;
+    color: @text;
+}
+
+#battery {
+    background-color: @base;
+    border: 1px solid @sapphire;
+    border-radius: 7px;
+    color: @text;
+}
+
+#tray {
+    background-color: @base;
+    border: 1px solid @mauve;
+    border-radius: 7px;
+    color: @text;
+}
+
+#network {
+    min-width: 100px;
+}
+
+#cpu,
+#memory,
+#battery,
+#pulseaudio {
+    min-width: 60px;
+}
+
+#cpu.critical,
+#memory.critical {
+    color: #e542c0;
+    border: 2px solid #e542c0;
+    border-radius: 7px;
+}
+
+#battery.warning {
+    color: @yellow;
+    border: 3px solid @yellow;
+    border-radius: 7px;
+}
+
+#battery.critical {
+    color: @red;
+    border: 3px solid @red;
+    border-radius: 7px;
+}
+
+#battery.charging {
+    color: @green;
+    border: 3px solid @green;
+    border-radius: 7px;
+}

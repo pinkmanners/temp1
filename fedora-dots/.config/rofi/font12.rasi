@@ -1,0 +1,4 @@
+* {
+    font: "Space Mono for Powerline 12";
+    font-weight: "bold";
+}
